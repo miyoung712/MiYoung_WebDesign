@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"> 
+    <title>이미영 웹디자인 포트폴리오</title>
+    <link rel="stylesheet" href="css/common.css">
+
+<style>
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+        ul,li,ol {list-style:none; margin:0; padding:0;}
+        a {text-decoration:none;}
+
+    .mySlides {display:none}
+    .lmy_container {width:100%; height:70px; display:flex; justify-content:center; align-items:center; }
+    .lmy_container h1 {font-family:'Barlow', sans-serif; font-weight: 600 !important; margin-top:15px;
+              letter-spacing:3px; color:#000; font-size:23px; text-transform: uppercase;}
+
+    #img_top_box {width:100%; height:700px; display:flex; justify-content:center;}
+    .img_big_box {width:87%; height:690px; display:flex; flex-direction:column;  margin-top:15px; 
+        z-index:1;border:1px solid #eee; background-color:skyblue; }
+    .text_box {width:100%; height:100px; background-color:pink;}   
+    .text_box h1 {font-family:'Barlow', sans-serif; font-weight: 600 !important; color:#000; font-size:20px; text-align:center; margin-top:15px; } 
+    .img_content {width:100%; height:590px; z-index:1; display:flex; justify-content:center; align-items: center; background-color:red;}
+    .img_content img {width:500px; height:300px;}
+
+    .pn_center {width:100%; height:100px; display:flex; justify-content:center; align-items: center; position:absolute; margin-top:-400px}
+    .p_button {width:67px; height:65px; background-color:#fff; border:1px solid #d4d4d4; position:absolute; left:2%;
+        display:flex; justify-content:center; align-items: center;  margin-top:-30px;}
+    .n_button {width:67px; height:65px; background-color:#fff; border:1px solid #d4d4d4; position:absolute; right:2%; 
+        display:flex; justify-content:center; align-items: center;  margin-top:-30px;}
+    .p_button:hover {cursor:pointer; color:#000; transition: 0.7s;}
+    .n_button:hover {cursor:pointer; color:#000; transition: 0.7s;}
+    .p_button,.n_button {font-family: 'S-CoreDream-5Medium'; letter-spacing: 2px; font-size: 11px; color:#999; text-transform: uppercase;}
+
+    .number_box {width:100%; height:70px; display:flex; justify-content:center; align-items: center; }
+    .number_button {font-family: 'S-CoreDream-4Regular'; letter-spacing: 1px; font-size:15px; color:#999; margin:13px;}
+    .number_button:hover {cursor:pointer; color:#000; transition: 0.7s;}
+
+    .footer {width:100%; height:97px; display:flex; justify-content:center; align-items:center;}
+    .footer_box {width:100%; height:97px; background-color:#a3a2a2;}
+    .footer_box p:first-of-type {font-family:'S-CoreDream-3Light'; color:#fff; font-size:13px; 
+            text-align:center; margin-top:32px;  }
+    .footer_box p:nth-of-type(2) {font-family:'S-CoreDream-3Light'; letter-spacing:1px; color:#fff; font-size:8px; 
+            text-align:center; margin-top:5px;}
+
+</style>
+
+</head>
+
+<body>
+
+   <div class="lmy_container">
+      <h1>MiYoung Web Design Portfolio</h1>
+   </div>
+    
+   <div id="img_top_box">
+
+        <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div>
+
+
+        <!-- <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div>
+
+
+        <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div>
+
+
+        <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div>
+
+
+        <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div>
+
+
+        <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div>
+
+
+        <div class="img_big_box"> 
+            <div class="text_box">
+                <h1>Event Page</h1>
+            </div>
+            <div class="img_content">
+                <img class="mySlides" src="" style="background-color:white;">
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="pn_center">
+      <div class="c">
+         <div class="p_button" onclick="plusDivs(-1)">❮ Prev</div>
+         <div class="n_button" onclick="plusDivs(1)">Next ❯</div>
+      </div>
+    </div>
+
+    <div class="number_box">
+        <div class="number_button" onclick="currentDiv(1)">1</div> 
+        <div class="number_button" onclick="currentDiv(2)">2</div> 
+        <div class="number_button" onclick="currentDiv(3)">3</div> 
+        <div class="number_button" onclick="currentDiv(4)">4</div> 
+        <div class="number_button" onclick="currentDiv(5)">5</div> 
+        <div class="number_button" onclick="currentDiv(6)">6</div> 
+        <div class="number_button" onclick="currentDiv(7)">7</div> 
+        <div class="number_button" onclick="currentDiv(8)">8</div> 
+    </div>
+
+    <div class="footer">
+        <div class="footer_box">
+            <p>본 홈페이지는 상업적 목적이 아닌 개인 포트폴리오 용으로 제작되었습니다.</p>
+            <p>©COPYRIGHT 2022 MiYOUNG LEE.</p>
+        </div>
+    </div>
+    
+<script>
+    
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+    showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-red";
+    }
+</script>
+
+
+</body>
+
+</html>
